@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    height: 4464px;
+    background-image: url(/assets/img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-baner{
+    display: flex;
+    flex-direction: row;
+}
