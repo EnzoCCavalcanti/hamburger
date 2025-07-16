@@ -4,20 +4,488 @@
   box-sizing: border-box;
 }
 
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body{
-    height: 4464px;
+    max-width: 1920px;
+    margin: 0 auto; 
     background-image: url(/assets/img/fundo.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top, center;
     background-repeat: no-repeat;
 }
 
-.header-container{
+button{
+    background: none;
+    border: none;
+}
+
+span{
+    color: #DAAB00;
+}
+
+p{
+    font-size: 36px;
+    color: white;
+}
+
+
+
+/*banner*/
+
+header{
     display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.banner{
+    width: 100%;
+    padding-left: 60px;
+    background-image: url('img/image 7.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+}
+
+.logo{
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.banner h1{
+    font-family: "Anton SC", sans-serif;
+    font-size: 120px;
+    color: #ffc800;
+}
+
+.banner p{
+    font-family: "Anton SC", sans-serif;
+    font-size: 78px;
+    color: white;
+}
+
+.botoes-banner{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.botoes-banner img{
+    width: 200px;
+    height: 50px;
+}
+
+.botoes-banner button:hover{
+    cursor: pointer;
+}
+
+.txt-banner .botoes-banner{
+    width: 80%;
+}
+
+
+
+/*MAIN*/
+
+.destaques{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 120px;
+}
+
+.txt-destaque h2{
+    font-family: "Anton SC", sans-serif;
+    font-size: 78px;
+    color: white;
+}
+
+
+
+.img-destaque{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    margin: 60px 0 60px 0;
+}
+
+.img-destaque div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-destaque div p{
+    font-size: 24px;
+}
+
+.img-destaque img{
+    width: 400px;
+    height: auto;
+}
+
+.img-destaque:hover{
+    cursor: pointer;
+}
+
+.botao-destaque button img{
+    width: 250px;
+}
+
+.botao-destaque button:hover{
+    cursor: pointer;
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 60px;
+}
+
+.txt-sobre {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 60px; 
+}
+
+.txt-sobre h2{
+    font-family: "Anton SC", sans-serif;
+    font-size: 78px;
+    color: white;
+}
+
+.txt-sobre .txt-sobre-p {
+    margin: 60px 0 60px 0;
+    max-width: 1164px;
+    background-image: url('img/Rectangle\ 3.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.txt-sobre .txt-sobre-p p{
+    font-family: 'Poppins', sans-serif;
+    margin: 30px;
+    font-size: 36px;
+    color: white;
+    
+}
+
+
+.fim{
+    background-image: url('img/still-life-delicious-american-hamburger\ 1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 60px;
+    padding-right: 100px;
+    margin-bottom: 60px;
+}
+
+.txt-fim h3{
+    margin-top: 50px;
+    font-family: "Anton SC", sans-serif;
+    margin-bottom: 40px;
+    font-size: 68px;
+    color: white;
+}
+
+.txt-fim p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.273);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 100px 0px 100px;
+    gap: 60px;
+}
+
+.footer img{
+    width: 70px;
+}
+
+.footer address, a, p{
+    font-family: "Anton SC", sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+p.cnpj{
+    font-size: 10px;
+    
+}
+
+
+/*MEDIAQUERIES*/
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .banner{
+    background-image: url('img/image 7 - Copia.png');
+    }
+    .destaques img{
+        width: 350px;
+    }
+}
+
+@media (min-width: 574px) and (max-width: 1200px) {
+    .banner{
+    background-image: url('img/mobileburguer.png');
+    padding-left: 5px;
+    }
+
+    .banner h1{
+        color: #ffc800;
+    }
+
+    .banner h1, p{
+        margin-right: 5px;
+    }
+
+    .botoes-banner{
+    margin-top: 30px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+    .img-destaque{
+    flex-direction: column;
+    gap: 40px;
+    margin: 10px 0 10px 0;
+}
+
+.img-destaque div p{
+    font-size: 34px;
+}
+
+.img-destaque img{
+    width: 500px;
+}
+
+.botao-destaque button {
+    margin-top: 30px;
+    width: 300px;
+}   
+
+.txt-sobre .txt-sobre-p {
+    padding: 20px;
+    margin-top: 24px;
+}
+
+.txt-sobre .txt-sobre-p p{
+    font-size: 22px;
+    text-align: center;
+    
+}
+
+
+.fim{
+    height:auto;
+    background-image: url('img/fimmobile.png');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 100px;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.txt-fim p{
+    margin-bottom: 160px;
+    font-size: 22px;
+    padding: 0;
+}
+
+
+.footer img{
+    width: 100px;
+}
+footer p, address, a{
+    font-weight: 100;
+    font-size: 20px;
+}
+}
+
+
+@media (min-width:350px) and (max-width: 573px) {
+    .banner{
+    padding-left: 10px;
+    background-image: url('img/mobileburguer.png');
+    background-size: 200px  ;
+    padding-bottom: 50px;
+    }
+
+    .logo{
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    }
+
+    .banner h1{
+    font-size: 52px;
+    }
+
+.banner p{
+    font-size: 36px;
+    }
+
+.botoes-banner{
+    margin-top: 30px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    }
+
+.botoes-banner img{
+    width: auto;
+    height: 30px;
+    }
+
+    .destaques{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+}
+
+.txt-destaque h2{
+    margin-bottom: 0px;
+    font-size: 36px;
+}
+
+.img-destaque{
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.img-destaque img{
+    width: 250px;
+    height: auto;
+}
+
+.botao-destaque button img{
+    margin-top: 20px;
+    width: 200px;
+}
+
+.sobre{
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+}
+
+.txt-sobre {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.txt-sobre h2{
+    font-size: 36px;
+}
+
+.txt-sobre .txt-sobre-p {
+    margin-top: 20px;
+    background: none;
+}
+
+.txt-sobre .txt-sobre-p p{
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+    
+}
+
+
+.fim{
+    height:auto;
+    background-image: url('img/fimmobile.png');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 100px;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.txt-fim h3{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.txt-fim p{
+    margin-bottom: 90px;
+    font-size: 22px;
+    padding: 0;
+}
+
+
+.footer{
+    gap: 20px;
     flex-direction: column;
 }
 
-.header-baner{
-    display: flex;
-    flex-direction: row;
+.footer address, a, p{
+    font-weight: 100;
+    text-align: center;
 }
+
+p.cnpj{
+    font-weight: 100;  
+}
+}
+
+
+
+
+
+
+
